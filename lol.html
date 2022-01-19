@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <title>Dragon Realm VR</title>
+        
+
+          <!-- Javascript A-Frame librarys-->
+       <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+        <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+      <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <meta charset="utf-8">
+        <a href="lol.html">https://memememememeememememe</a>
+                   
+                            <script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                            <link rel="stylesheet" href="style.ccs">
+      
+    </head>
+   
+    <body>
+
+        <div class="flag-container">
+            <div class="flag" ></div>
+            </div> 
+    <!-- Javascript coding section -->
+    <script>
+       
+                    
+    </script>
+
+        <a-scene>
+            
+            <!-- Set the Camera position -->
+
+            <audio>
+                <source src="audio/hi.mp3" type="audio/mpeg"/>
+            </audio>
+           
+
+            <!-- Floor -->
+            <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100"
+            color="green"></a-plane>
+            
+
+                     
+               
+            <!-- Ambient lighting -->
+           
+
+            <!-- Rain -->
+                 
+                   
+            <!-- sKY -->
+            <a-sky src="/sky.jpg"></a-sky>
+                    
+               
+            <!-- *** Castle *** -->
+
+                <!-- Castle - Front left Tower 1-->
+                <a-cylinder position= "-2 3 -6" height="6" src="bricks4p.jpeg"> </a-cylinder>
+
+
+                
+                    <!--  Castle - Front left Tower 1 Window -->
+              
+                        
+                    <!-- Castle - Front left Tower 1 Roof -->
+                    <a-cone position="-2 6.5 -6" height="1"
+                    radius-top="0.4" radius-bottom="1.2" color="#64ddc5"
+                    ></a-cone> 
+               
+
+                    <!-- Flag -->
+                    <a-cylinder Position="-2 7 -6" Height="3"  Radius="0.1" color="brown"></a-cylinder>
+                    
+                    <a-plane Position="-1.25 8 -6" rotation="180 0 0" Width="1.5" Height="1" Rotation="0 0 0" src="WIN_20220118_11_44_25_Pro.jpg"></a-plane>
+                     
+                   
+
+                        
+                        
+                        
+                       <script>
+                           var a = $('.flag').width();
+                           for(var i = 0; i < a; i++){
+                               var flagElement = $("<div class='flag-Element'>"
+                                );
+                                flagElement.css('background-position', -i + "px 0"); 
+                                flagElement.ccs('animation-delay', i * 10 + 'ms');
+                                $('.flag').append(flagElement); 
+                          
+                            }
+                        </script>
+                   
+                   
+
+
+
+
+             
+
+
+                <!-- Castle - Front wall above draw bridge -->
+                <a-box Position="-0.5 3 -6" Width="1" Height="1" Depth="0.5" src="bricks1p.jpg"></a-box>
+                <a-box Position="0.5 3.25 -6" Height="0.5" Width="1" Depth="0.5" src="bricks1p.jpg"></a-box>
+                <a-box Position="1.50 3.25 -6" Height="0.5" Width="1" Depth="0.5" src="bricks1p.jpg"></a-box>
+                <a-box Position="2.50 3 -6" Width="1" Height="1" Depth="0.5" src="bricks1p.jpg"></a-box> 
+
+                <!-- Castle - Front wall Battlements -->
+                <a-box Position="-1 3.75 -6" Width="0.5" height="0.5" depth="0.5" color="black"></a-box>
+                <a-box Position="0 3.75 -6" Width="0.5" height="0.5" depth="0.5" color="black"> </a-box>
+                <a-box Position="1 3.75 -6" Width="0.5" height="0.5" depth="0.5" color="black"> </a-box>     
+                <a-box Position="2 3.75 -6" Width="0.5" height="0.5" depth="0.5" color="black"> </a-box>
+                <a-box Position="3 3.75 -6" Width="0.5" height="0.5" depth="0.5" color="black"> </a-box>
+                <!-- Castle - Front wall left draw bridge -->
+                <a-box Position="-0.5 1 -6" Width="1" Height="3" Depth="0.5" src="bricks1p.jpg"></a-box>
+                
+             
+                
+                <!-- Castle - Front wall right draw bridge -->
+                <a-box Position="2.50 1 -6" Width="1" Height="3" Depth="0.5" src="bricks1p.jpg"></a-box>
+                                    
+            
+                <!-- Castle - Front right Tower 2 -->
+                <a-cylinder position= "4 3 -6" height="6" src="bricks4p.jpeg"> </a-cylinder>
+
+                <!--Flag 2-->
+                <a-cylinder Position="4 7 -6" Height="3"  Radius="0.1" color="brown"></a-cylinder>
+                    
+                <a-plane Position="3.2 8 -6" rotation="180 0 0" Width="1.5" Height="1" Rotation="0 0 0" src="WIN_20220118_11_44_25_Pro.jpg"></a-plane>
+
+                
+                
+                    <!-- Castle - Front right Tower 2 Window -->
+               
+                
+                    <!-- Castle - Front right Tower 2 Roof -->
+                    <a-cone position="4 6.5 -6" height="1"
+                    radius-top="0.4" radius-bottom="1.2" color="#64ddc5"
+                    ></a-cone>
+                
+
+                <!-- Castle - Back right Tower 4 -->
+                <a-cylinder position= "8 -6" height="6" src="bricks4p.jpeg"> </a-cylinder>
+
+
+            
+
+                    <!-- Castle - Back Right Tower 4 Roof -->
+                
+
+                <!-- Castle - Back left Tower 3-->
+                 
+
+                   <!-- Castle - Back Left Tower 3 Roof -->
+                
+
+                <!-- Castle - rear wall B 4 -->
+                                 
+                  
+                <!-- Castle -middle left Tower 5 -->
+                 
+
+                <!-- Castle -middle right Tower 6 -->
+                
+
+                <!-- Castle -middle left Wall C  -->
+          
+                 
+                <!-- Castle -middle left Wall E -->
+                   
+                     
+                <!-- Castle -middle right Wall D -->
+                
+
+                <!-- Castle -middle right Wall F -->
+
+               
+           `    <!-- Castle Bailey -->
+
+
+                <!-- Castle - draw bridge  -->
+                <a-box Position="1 1 -6.2" Width="2" Height="4" depth="0.2" src="drawbridge1.jpg"></a-box>
+
+
+ 
+            <!-- Moat -->
+            <a-ring Position="1 0 0" radius-inner="10" rotation="-90 0 0" radius-outer="15" height="100.1" depth="2" src="water.jpg"></a-ring>
+
+
+            
+            
+           
+            <!-- Village Well -->
+           
+
+                <!-- Village Well Roof --> 
+
+           
+                <!-- Village Well Roof posts -->
+
+          
+                <!-- ground under well -->
+
+            
+            <!-- Trees Left-->
+           
+            <!-- Trees right-->
+           
+
+                      
+           
+            <!-- Shark -->
+                
+
+            <!-- Dragon --> 
+
+            <a-entity id="river" geometry="primitive: plane" material="color: blue"
+          position="0 0 0" sound="src: url(hi.mp3; autoplay: true"></a-entity>
+
+          <!--Music-->
+          <audio id="otherside" src="hi.mp3"></audio>
+
+         
+
+            
+
+        </a-scene>
+    </body>
+</html>
